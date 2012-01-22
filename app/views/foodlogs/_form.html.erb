@@ -1,0 +1,65 @@
+<%= form_for(@foodlog) do |f| %>
+  <% if @foodlog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@foodlog.errors.count, "error") %> prohibited this foodlog from being saved:</h2>
+
+      <ul>
+      <% @foodlog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :entry_date %><br />
+    <%= f.date_select :entry_date %>
+  </div>
+  <div class="field">
+    <%= f.label :water %><br />
+    <%= f.number_field :water %>
+  </div>
+  <div class="field">
+    <%= f.label :leafy_green %><br />
+    <%= f.number_field :leafy_green %>
+  </div>
+  <div class="field">
+    <%= f.label :vitamin_c %><br />
+    <%= f.text_field :vitamin_c %>
+  </div>
+  <div class="field">
+    <%= f.label :calories %><br />
+    <%= f.number_field :calories %>
+  </div>
+  <div class="field">
+    <%= f.label :protein %><br />
+    <%= f.number_field :protein %>
+  </div>
+  <div class="field">
+    <%= f.label :calcium %><br />
+    <%= f.number_field :calcium %>
+  </div>
+  <div class="field">
+    <%= f.label :fruit_and_veg %><br />
+    <%= f.number_field :fruit_and_veg %>
+  </div>
+  <div class="field">
+    <%= f.label :whole_grain %><br />
+    <%= f.number_field :whole_grain %>
+  </div>
+  <div class="field">
+    <%= f.label :iron_rich %><br />
+    <%= f.number_field :iron_rich %>
+  </div>
+  <div class="field">
+    <%= f.label :fat_foods %><br />
+    <%= f.number_field :fat_foods %>
+  </div>
+  <div class="field">
+    <%= f.label :vitamins %><br />
+    <%= f.number_field :vitamins %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

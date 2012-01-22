@@ -1,0 +1,25 @@
+<h1>Listing foodlog_entries</h1>
+
+<table>
+  <tr>
+    <th>Foodlog</th>
+    <th>Food</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @foodlog_entries.each do |foodlog_entry| %>
+  <tr>
+    <td><%= foodlog_entry.foodlog_id %></td>
+    <td><%= foodlog_entry.food_id %></td>
+    <td><%= link_to 'Show', foodlog_entry %></td>
+    <td><%= link_to 'Edit', edit_foodlog_entry_path(foodlog_entry) %></td>
+    <td><%= link_to 'Destroy', foodlog_entry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Foodlog entry', new_foodlog_entry_path %>

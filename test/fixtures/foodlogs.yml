@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  entry_date: 2012-01-21
+  water: 1
+  leafy_green: 1
+  vitamin_c: 
+  calories: 1
+  protein: 1
+  calcium: 1
+  fruit_and_veg: 1
+  whole_grain: 1
+  iron_rich: 1
+  fat_foods: 1
+  vitamins: 1
+
+two:
+  entry_date: 2012-01-21
+  water: 1
+  leafy_green: 1
+  vitamin_c: 
+  calories: 1
+  protein: 1
+  calcium: 1
+  fruit_and_veg: 1
+  whole_grain: 1
+  iron_rich: 1
+  fat_foods: 1
+  vitamins: 1

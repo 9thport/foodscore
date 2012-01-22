@@ -1,4 +1,10 @@
 Foodscore::Application.routes.draw do
+  resources :foodlog_entries
+
+  resources :foodlogs
+
+  resources :foods
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

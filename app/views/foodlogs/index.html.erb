@@ -1,0 +1,45 @@
+<h1>Listing foodlogs</h1>
+
+<table>
+  <tr>
+    <th>Entry date</th>
+    <th>Water</th>
+    <th>Leafy green</th>
+    <th>Vitamin c</th>
+    <th>Calories</th>
+    <th>Protein</th>
+    <th>Calcium</th>
+    <th>Fruit and veg</th>
+    <th>Whole grain</th>
+    <th>Iron rich</th>
+    <th>Fat foods</th>
+    <th>Vitamins</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @foodlogs.each do |foodlog| %>
+  <tr>
+    <td><%= foodlog.entry_date %></td>
+    <td><%= foodlog.water %></td>
+    <td><%= foodlog.leafy_green %></td>
+    <td><%= foodlog.vitamin_c %></td>
+    <td><%= foodlog.calories %></td>
+    <td><%= foodlog.protein %></td>
+    <td><%= foodlog.calcium %></td>
+    <td><%= foodlog.fruit_and_veg %></td>
+    <td><%= foodlog.whole_grain %></td>
+    <td><%= foodlog.iron_rich %></td>
+    <td><%= foodlog.fat_foods %></td>
+    <td><%= foodlog.vitamins %></td>
+    <td><%= link_to 'Show', foodlog %></td>
+    <td><%= link_to 'Edit', edit_foodlog_path(foodlog) %></td>
+    <td><%= link_to 'Destroy', foodlog, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Foodlog', new_foodlog_path %>

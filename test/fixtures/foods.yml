@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  green: 1
+  vitamin_c: 1
+  protein: 1
+  calcium: 1
+  fruits_and_veg: 1
+  whole_grain: 1
+  iron_rich: 1
+  fat_food: 1
+  vitamins: 1
+
+two:
+  name: MyString
+  green: 1
+  vitamin_c: 1
+  protein: 1
+  calcium: 1
+  fruits_and_veg: 1
+  whole_grain: 1
+  iron_rich: 1
+  fat_food: 1
+  vitamins: 1
